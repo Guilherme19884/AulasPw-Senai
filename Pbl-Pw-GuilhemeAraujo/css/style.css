@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: black;
+}
+.cabecario {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  color: aliceblue;
+}
+h2 {
+  display: flex;
+  justify-content: end;
+  max-width: 800px;
+  color: aliceblue;
+}
+body {
+  background-image: url(https://www.falamart.com.br/wp-content/uploads/2020/10/pinceis-black-friday-produtos-beleza-Capa.jpg);
+  background-repeat: repeat-y;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(108, 141, 141);
+  opacity: 70%;
+  margin: 100px 400px 400px 400px;
+  border-radius: 10px;
+  border: none;
+}
+
+.contFormulario > input {
+  border-radius: 5px;
+  margin: 10px 0px;
+  border: none;
+}
+.button {
+  background-color: black;
+  color: aliceblue;
+}
+.button:hover {
+  background-color: pink;
+  color: black;
+  font-size: 15px;
+}
+@media (max-width: 660px) {
+  .container {
+    margin: auto;
+  }
+  h2 {
+    justify-content: center;
+  }
+}
+@media (max-width: 835px) {
+  .container {
+    margin: auto;
+  }
+  h2 {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1010px) {
+  .container {
+    margin: auto;
+  }
+  h2 {
+    max-width: 650px;
+  }
+}
+@media (max-width: 1075px) {
+  .container {
+    margin: auto;
+  }
+  h2 {
+    max-width: 700px;
+  }
+}

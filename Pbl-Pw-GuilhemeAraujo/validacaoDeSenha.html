@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Validação de Senha</title>
+  </head>
+  <body>
+    <h1 class="cabecario">Beleza Pura</h1>
+    <h2>Formulário de cadastro</h2>
+    <div class="container">
+      <form action="" class="contFormulario">
+        <label for="" class="lab">Digite seu nome completo</label><br />
+        <input
+          type="text"
+          placeholder="Nome Completo"
+          id="texto"
+          onblur="tornarMaiusculos()"
+        /><br />
+        <label for="">Digite sua idade</label><br />
+        <input
+          type="number"
+          placeholder="Idade"
+          id="idade"
+          onblur="validarIdade()"
+        /><br />
+        <label for="">Digite seu telefone</label><br />
+        <input type="tel" placeholder="Número de Telefone" /><br />
+        <label for="">Digite seu e-mail</label><br />
+        <input type="email" placeholder="E-mail" /><br />
+        <label for="">Digite sua Senha</label><br />
+        <input
+          type="password"
+          placeholder="Digite sua Senha"
+          id="senha"
+        /><br />
+        <label for="">Confirme sua Senha</label><br />
+        <input
+          type="password"
+          placeholder="Confirme sua senha"
+          id="cSenha"
+          onblur="validPassword()"
+        /><br />
+        <input
+          type="button"
+          value="Enviar"
+          class="button"
+          onclick="testarIgualdadeSenha()"
+        />
+        <span></span><br />
+      </form>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

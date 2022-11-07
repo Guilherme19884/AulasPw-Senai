@@ -37,7 +37,7 @@ function tornarMaiusculos() {
   document.getElementById("texto").value = nomeMaiusculo;
 }
 function validarIdade() {
-  idade = parseInt(document.getElementById("txtIdade").value);
+  idade = parseInt(document.getElementById("idade").value);
   if (idade >= 18) {
     return true;
   }
@@ -48,6 +48,8 @@ function validarForm() {
   if (validarIdade()) {
     alert("Preenchimento dos dados ok!");
   } else {
-    alert("Refaça os passos, para o próximo usuário pois esse é menor de idade!");
+    alert(
+      "Refaça os passos, para o próximo usuário pois esse é menor de idade!"
+    );
   }
 }
